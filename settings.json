@@ -27,7 +27,7 @@
     "./extensions/codex-utils",
     "./extensions/question",
     "./extensions/notify",
-    "git:git@github.com:park-csu/pi-observational-memory.git"
+    "git:github.com/park-csu/pi-observational-memory"
   ],
   "observational-memory": {
     "chunkTokens": 20000,
