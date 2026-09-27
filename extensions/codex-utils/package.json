@@ -1,0 +1,40 @@
+{
+  "name": "codex-utils",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codex quota status and Fast mode utilities for pi",
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "files": [
+    "*.ts",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pi-codex-status": "^0.1.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.3",
+    "@earendil-works/pi-tui": "^0.84.3",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0",
+    "ui-kit": "file:../ui-kit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "ui-kit": "*"
+  }
+}

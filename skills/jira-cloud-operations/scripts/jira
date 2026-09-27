@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v acli >/dev/null 2>&1; then
+  printf 'error: acli is not installed or not on PATH\n' >&2
+  exit 127
+fi
+
+exec acli jira "$@"

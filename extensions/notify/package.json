@@ -1,0 +1,13 @@
+{
+  "name": "notify",
+  "version": "0.1.0",
+  "description": "Terminal notifications when Pi settles",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["pi-package"],
+  "files": ["index.ts", "README.md", "LICENSE"],
+  "pi": { "extensions": ["./index.ts"] },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}

@@ -1,0 +1,7 @@
+*
+!.gitignore
+!github.com/
+github.com/*
+!github.com/park-csu/
+github.com/park-csu/*
+!github.com/park-csu/pi-observational-memory/

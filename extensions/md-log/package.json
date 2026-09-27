@@ -1,0 +1,12 @@
+{
+  "name": "md-log",
+  "version": "0.1.0",
+  "description": "Mirror assistant messages to a Markdown file",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "files": ["index.ts", "README.md"],
+  "pi": { "extensions": ["./index.ts"] },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}

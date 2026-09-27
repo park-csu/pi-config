@@ -1,0 +1,44 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Configurable Tavily/Exa web search and Tavily web fetch tools for pi",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "tavily",
+    "exa",
+    "web-search"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "tavily.ts",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*",
+    "ui-kit": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "@earendil-works/pi-ai": "^0.85.1",
+    "@earendil-works/pi-tui": "^0.85.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0",
+    "ui-kit": "file:../ui-kit"
+  }
+}

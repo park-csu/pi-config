@@ -1,0 +1,52 @@
+{
+  "lastChangelogVersion": "0.87.1",
+  "theme": "oxocarbon",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-6-sol",
+  "defaultThinkingLevel": "xhigh",
+  "enabledModels": [
+    "openai-codex/gpt-6-astra:xhigh",
+    "openai-codex/gpt-6-luna:xhigh",
+    "openai-codex/gpt-6-sol:xhigh"
+  ],
+  "hideThinkingBlock": true,
+  "compaction": {
+    "enabled": true,
+    "reserveTokens": 54400,
+    "keepRecentTokens": 20000
+  },
+  "extensions": [],
+  "packages": [
+    "./extensions/ui-kit",
+    "./extensions/subagents",
+    "./extensions/md-log",
+    "./extensions/prompt-snippets",
+    "./extensions/apply-patch",
+    "./extensions/web",
+    "./extensions/caffeine",
+    "./extensions/codex-utils",
+    "./extensions/question",
+    "./extensions/notify",
+    "git:git@github.com:park-csu/pi-observational-memory.git"
+  ],
+  "observational-memory": {
+    "chunkTokens": 20000,
+    "compactAtContextTokens": 200000,
+    "models": {
+      "observer": {
+        "provider": "openai-codex",
+        "id": "gpt-5.6-luna",
+        "thinking": "medium"
+      },
+      "consolidator": {
+        "provider": "openai-codex",
+        "id": "gpt-5.6-luna",
+        "thinking": "high"
+      }
+    }
+  },
+  "enableInstallTelemetry": false,
+  "images": {
+    "blockImages": false
+  }
+}

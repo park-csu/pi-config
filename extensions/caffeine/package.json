@@ -1,0 +1,23 @@
+{
+  "name": "caffeine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prevent system sleep while the pi agent is running",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "files": ["index.ts", "README.md", "tsconfig.json"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.3",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

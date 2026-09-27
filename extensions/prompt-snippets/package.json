@@ -1,0 +1,13 @@
+{
+  "name": "prompt-snippets",
+  "version": "0.1.0",
+  "description": "Toggleable prompt snippets for Pi",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "files": ["index.ts", "snippets", "README.md"],
+  "pi": { "extensions": ["./index.ts"] },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}

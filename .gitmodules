@@ -1,0 +1,6 @@
+[submodule "git/github.com/park-csu/pi-observational-memory"]
+	path = git/github.com/park-csu/pi-observational-memory
+	url = git@github.com:park-csu/pi-observational-memory.git
+[submodule "extensions/subagents"]
+	path = extensions/subagents
+	url = git@github.com:park-csu/pi-subagents.git

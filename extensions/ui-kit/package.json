@@ -1,0 +1,29 @@
+{
+  "name": "ui-kit",
+  "version": "0.1.0",
+  "description": "Shared Pi UI panels and tool renderers",
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "files": [
+    "*.ts",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./panels": "./panels.ts",
+    "./tools": "./tools.ts",
+    "./appearance": "./appearance.ts",
+    "./tool-styles": "./tool-styles.ts"
+  }
+}
